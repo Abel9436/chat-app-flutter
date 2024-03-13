@@ -22,7 +22,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   Gemini.init(
-      apiKey: 'AIzaSyB8_Gt2oPMDmAb1hOpduAC-40Ba-hyXea4', enableDebugging: true);
+      apiKey: 'API_KEY', enableDebugging: true);
   runApp(const MyApp());
 }
 
@@ -35,7 +35,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   late ChatGpt chatGpt =
-      ChatGpt(apiKey: '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');
+      ChatGpt(apiKey: 'API_KEY');
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
